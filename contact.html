@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header>
+	<div class="mainheader">
+		<div>
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<div class="menu-bar">
+			<ul>
+			<li class="active"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="about.html"><i class="fa fa-user"></i>About </a></li>
+			<li><i class="fa fa-clone"></i>Services
+			<div class="sub-menu-1">
+				<ul>
+					<li><a href="website designer.html">Wesite Design</a></li>
+					<li><a href="hardware technician.html">Computer Technician</a></li>
+					<li><a href="graphics designer.html">Graphics Design</a></li>
+				</ul>
+			</div>
+			</li>		
+			<li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+			</ul>
+	</div>
+	<div class="menu">
+			<button>Helpline</button>
+			
+		</div>
+	</div>
+</header>
+<main>
+
+<div class="downcontent">
+	<div class="leftc">
+		<form action = "next_page" name = "myForm" onsubmit = "return(validate());">
+
+<label>Name</label><input type = "text" name = "Name" />
+<label>Email</label><input type = "text" name = "EMail" />
+<label>Country</label>
+<select name = "Country">
+<option value = "1">Nepal</option>
+<option value = "2">India</option>
+<option value = "3">Others</option>
+</select>
+<label>Message</label><textarea id="messgae" name="Message" rows="4" cols="50"></textarea>
+<input type = "submit" value = "Submit" /></td> </tr>
+
+</form> 
+
+<script type = "text/javascript">
+function validate() {
+if( document.myForm.Name.value == "" ) {
+alert( "Please provide your name!" ); document.myForm.Name.focus() ; return false;
+}
+if( document.myForm.EMail.value == "" ) {
+alert( "Please provide your Email!" ); document.myForm.EMail.focus() ; return false;
+}
+if( document.myForm.Message.value == "" ) {
+alert( "Please write some message!" ); document.myForm.Message.focus() ; return false;
+}
+if( document.myForm.Country.value == "-1" ) {
+alert( "Please provide your country!" ); return false;
+}
+return( true );
+}
+</script>
+	</div>
+	<div class="leftm">
+		<h2>Feel free to Contact</h2>
+	<i class="fa fa-home" aria-hidden="true"></i><h3>Thapathali,Kathmandu</h3><br>
+	<i class="fa fa-mobile" aria-hidden="true"></i><h3>+977 9860682121</h3>
+	<i class="fa fa-envelope" aria-hidden="true"></i><h3>rupeshpoudel069@gmail.com</h3>
+	</div>
+	<div class="c"></div>
+	<div class="leftr">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14131.741585284997!2d85.31662475233144!3d27.68839153634814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3e5bc926b5a2eb26!2sAce%20services!5e0!3m2!1sen!2snp!4v1600255838466!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<div class="c"></div>
+	</div>
+</div>
+
+
+	
+
+</main>
+<div class="footer">
+	<div class="footer-content">
+		<div class="contact">
+			<span><i class="fas fa-phone"></i> &nbsp; +977-9860682121</span>
+			<span><i class="fas fa-envelope"></i> &nbsp; rupeshpoudel069@gmail.com</span>
+		</div>
+		<div class="icon-bar">
+			 <a href="https://www.facebook.com/rupesh.poudela/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+  			<a href="https://www.google.com/" class="google" target="_blank"><i class="fa fa-instagram"></i></a>
+  			 <a href="https://www.youtube.com/channel/UC9QaYJqRbSDYNOMtBtFFD8g?view_as=subscriber" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		&copy; rupeshpoudel069.com.np | Designed by Rupesh Poudel 
+	</div>
+</div>
+
+
+
+</body>
+</html>
